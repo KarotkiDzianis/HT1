@@ -103,6 +103,8 @@ public class JenkinsTest {
         String str = homePage.getTextLinkEnableAutoRefresh();
         homePage.clickLinkEnableAutoRefresh();
         String strAfter = homePage.getTextLinkEnableAutoRefresh();
+        Assert.assertEquals(str, "ENABLE AUTO REFRESH");
+        Assert.assertEquals(strAfter, "DISABLE AUTO REFRESH");
         Assert.assertFalse(str.equals(strAfter));
     }
 
