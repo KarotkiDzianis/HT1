@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public abstract  class AbstractPage {
+public abstract class AbstractPage {
 
 
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[2]/div[2]/div[1]/div/div/a")

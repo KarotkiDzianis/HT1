@@ -7,22 +7,22 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DeletePage {
 
-    @FindBy (name = "delete" ) /*(xpath = "//*[@id='main-panel']/form" )*/
+    @FindBy(name = "delete")
 
-            WebElement delText;
+    private WebElement delText;
 
-    @FindBy (id = "yui-gen3")
-    WebElement buttonDelete;
+    @FindBy(id = "yui-gen4-button")
+    private WebElement buttonDelete;
 
-    WebDriver driver;
+    private WebDriver driver;
 
-    public DeletePage (WebDriver driver) {
+    public DeletePage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
-    public String getWarningText(){
-         return delText.getText();
+    public String getWarningText() {
+        return delText.getText();
     }
 
     public ManageUsersPage ClickButtonYes() {

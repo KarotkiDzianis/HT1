@@ -19,8 +19,6 @@ public class Steps {
     }
 
 
-
-
     public void loginJenkins(String username, String password) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.openLoginPage();
@@ -39,22 +37,9 @@ public class Steps {
         HomePage homePage = new HomePage(driver);
         homePage.openManageJenkinsPage();
         ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
-        return  manageJenkinsPage;
+        return manageJenkinsPage;
     }
 
-
-   /* public boolean getManageJenkinsLink(String message) {
-        HomePage homePage = new HomePage(driver);
-        homePage.openManageJenkinsPage();
-        ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
-        return manageJenkinsPage.getLinkText().contains(message);
-    }
-    public  boolean getManageJenkinsText (String message) {
-        HomePage homePage = new HomePage(driver);
-        homePage.openManageJenkinsPage();
-        ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
-        return manageJenkinsPage.getText().contains(message);
-    }*/
 
     public ManageUsersPage openManageUsersPage() {
 
@@ -63,19 +48,11 @@ public class Steps {
         ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
         manageJenkinsPage.openManageUsersPage();
         ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
-        return  manageUsersPage;
+        return manageUsersPage;
     }
 
-   /* public  boolean getCreateUserText (String message) {
-        HomePage homePage = new HomePage(driver);
-        homePage.openManageJenkinsPage();
-        ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
-        manageJenkinsPage.openManageUsersPage();
-        ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
-        return manageUsersPage.getTextLinkCreateUser().contains(message);
-    }*/
 
-    public  CreateUsersPage openCreateUsersPage () {
+    public CreateUsersPage openCreateUsersPage() {
         HomePage homePage = new HomePage(driver);
         homePage.openManageJenkinsPage();
         ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
@@ -83,10 +60,10 @@ public class Steps {
         ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
         manageUsersPage.openCreateUsersPage();
         CreateUsersPage createUsersPage = new CreateUsersPage(driver);
-       return createUsersPage;
+        return createUsersPage;
     }
 
-    public boolean testNameNewUser (String message) {
+    public boolean testNameNewUser(String message) {
         ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
         return manageUsersPage.getNameNewUser().contains(message);
     }
@@ -98,76 +75,14 @@ public class Steps {
         ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
         manageJenkinsPage.openManageUsersPage();
         ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
-         manageUsersPage.openDeletePage();
-        DeletePage deletePage=new DeletePage(driver);
+        manageUsersPage.openDeletePage();
+        DeletePage deletePage = new DeletePage(driver);
         return deletePage;
     }
-
-
-    public  boolean getNewUserPassword1 () {
-        HomePage homePage = new HomePage(driver);
-        homePage.openManageJenkinsPage();
-        ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
-        manageJenkinsPage.openManageUsersPage();
-        ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
-        manageUsersPage.openCreateUsersPage();
-        CreateUsersPage createUsersPage = new CreateUsersPage(driver);
-        return createUsersPage.getPassword1Text().isEmpty();
-    }
-
-
-
-
- /*   public  boolean addUser (Users user) {
-        HomePage homePage = new HomePage(driver);
-        homePage.openManageJenkinsPage();
-        ManageJenkinsPage manageJenkinsPage = new ManageJenkinsPage(driver);
-        manageJenkinsPage.openManageUsersPage();
-        ManageUsersPage manageUsersPage = new ManageUsersPage(driver);
-        manageUsersPage.openCreateUsersPage();
-        CreateUsersPage createUsersPage = new CreateUsersPage(driver);
-        createUsersPage.createNewUser(user);
-         return  true;
-    }*/
-
-
-
-
-
- /*   public String ColorOfLoginButton (String color) {
-        LoginPage loginPage =new LoginPage(driver);
-        return a;
-    }*/
-
 
 
 }
 
 
-
-
-   /* public boolean isLoggedIn(String username)
-    {
-        LoginPage loginPage = new LoginPage(driver);
-        String actualUsername = loginPage.getLoggedInUserName().trim().toLowerCase();
-        logger.info("Actual username: " + actualUsername);
-        return actualUsername.equals(username);
-    }
-
-    public boolean createNewRepository(String repositoryName, String repositoryDescription)
-    {
-        MainPage mainPage = new MainPage(driver);
-        mainPage.clickOnCreateNewRepositoryButton();
-        CreateNewRepositoryPage createNewRepositoryPage = new CreateNewRepositoryPage(driver);
-        String expectedRepoName = createNewRepositoryPage.createNewRepository(repositoryName, repositoryDescription);
-        return expectedRepoName.equals(createNewRepositoryPage.getCurrentRepositoryName());
-    }
-
-    public boolean currentRepositoryIsEmpty()
-    {
-        CreateNewRepositoryPage createNewRepositoryPage = new CreateNewRepositoryPage(driver);
-        return createNewRepositoryPage.isCurrentRepositoryEmpty();
-    }
-*/
 
 

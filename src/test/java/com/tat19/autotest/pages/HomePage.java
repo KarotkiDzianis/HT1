@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends AbstractPage{
+public class HomePage extends AbstractPage {
 
     @FindBy(xpath = "//*[@id='tasks']/div[4]/a[2]")
     private WebElement manageJenkinsLink;
@@ -15,7 +15,7 @@ public class HomePage extends AbstractPage{
     private WebElement linkEnableAutoRefresh;
 
 
-    WebDriver driver;
+    private WebDriver driver;
 
 
     public HomePage(WebDriver driver) {

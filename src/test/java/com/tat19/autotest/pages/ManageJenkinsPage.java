@@ -5,19 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ManageJenkinsPage extends AbstractPage{
+public class ManageJenkinsPage extends AbstractPage {
 
 
     @FindBy(xpath = "//*[@id='main-panel']/div[16]/a")
     private WebElement manageUserLink;
 
     @FindBy(xpath = "//*[@id='main-panel']/div[16]/a/dl/dt")
-    WebElement textManageUsers;
+    private WebElement textManageUsers;
 
     @FindBy(xpath = "//*[@id='main-panel']/div[16]/a/dl/dd[1]")
-    WebElement textCreateDeleteModifyUsers;
+    private  WebElement textCreateDeleteModifyUsers;
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public ManageJenkinsPage(WebDriver driver) {
         this.driver = driver;
@@ -31,7 +31,7 @@ public class ManageJenkinsPage extends AbstractPage{
     }
 
     public String getTextLinkManageUsers() {
-      return   textManageUsers.getText();
+        return textManageUsers.getText();
 
     }
 

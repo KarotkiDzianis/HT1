@@ -9,23 +9,23 @@ public class ManageUsersPage extends AbstractPage {
 
 
     @FindBy(xpath = "//*[@id='tasks']/div[3]/a[2]")
-    WebElement linkCreateUser;
+    private WebElement linkCreateUser;
 
     @FindBy(xpath = "//*[@id='people']/tbody/tr[3]/td[4]/a[2]")
-    WebElement linkDelete;
+    private WebElement linkDelete;
 
 
     @FindBy(linkText = "user/admin/delete")
-    WebElement linkAdminDelete;
+    private WebElement linkAdminDelete;
 
 
     @FindBy(xpath = "//*[@id='people']/tbody/tr[2]/td[2]/a")
-    WebElement adminName;
+    private  WebElement adminName;
 
     @FindBy(xpath = "//*[@id='people']/tbody/tr[3]/td[2]/a")
-    WebElement newUserIsCreate;
+    private WebElement newUserIsCreate;
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public ManageUsersPage(WebDriver driver) {
         this.driver = driver;
@@ -58,9 +58,10 @@ public class ManageUsersPage extends AbstractPage {
         return newUserIsCreate.isDisplayed();
     }
 
-    public boolean linkAdminDelete () {
+    public boolean linkAdminDelete() {
         return linkAdminDelete.isDisplayed();
     }
+
     public String getNameAdmin() {
         return adminName.getText();
     }

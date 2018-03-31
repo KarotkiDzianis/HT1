@@ -6,33 +6,32 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateUsersPage extends  AbstractPage{
+public class CreateUsersPage extends AbstractPage {
 
 
-
-    WebDriver driver;
+    private WebDriver driver;
 
 
     @FindBy(xpath = "//*[@id='username']")
-    WebElement username;
+    private WebElement username;
 
     @FindBy(xpath = "//*[@id='main-panel']/form/div[1]/table/tbody/tr[2]/td[2]/input")
-    WebElement password1;
+    private  WebElement password1;
 
     @FindBy(xpath = "//*[@id='main-panel']/form/div[1]/table/tbody/tr[3]/td[2]/input")
-    WebElement password2;
+    private WebElement password2;
 
     @FindBy(xpath = "//*[@id='main-panel']/form/div[1]/table/tbody/tr[4]/td[2]/input")
-    WebElement fio;
+    private  WebElement fio;
 
     @FindBy(xpath = "//*[@id='main-panel']/form/div[1]/table/tbody/tr[5]/td[2]/input")
-    WebElement email;
+    private WebElement email;
 
     @FindBy(xpath = "//*[@id='yui-gen4']")
-    WebElement buttonCreateUser;
+    private WebElement buttonCreateUser;
 
-    @FindBy(xpath =  "//*[@id='main-panel']/form/div[1]/div")
-    WebElement errorMessage;
+    @FindBy(xpath = "//*[@id='main-panel']/form/div[1]/div")
+    private  WebElement errorMessage;
 
     public CreateUsersPage(WebDriver driver) {
         this.driver = driver;
@@ -93,19 +92,6 @@ public class CreateUsersPage extends  AbstractPage{
         return email.getText();
     }
 
-
-
-    /*public ManageUsersPage open() {
-        if (username.getSize() != null && password1!=null &&
-                password2 != null && password1==password2 && fio != null && email !=null) {
-
-            buttonCreate.click();
-        } else {
-            System.out.println("You must write all fields");
-
-        }
-        return  new ManageUsersPage(driver);
-    }*/
 
 }
 
