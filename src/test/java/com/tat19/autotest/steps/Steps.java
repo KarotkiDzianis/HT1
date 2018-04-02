@@ -25,6 +25,10 @@ public class Steps {
         loginPage.loginAs(username, password);
     }
 
+    public void logOut() {
+        HomePage homePage = new HomePage(driver);
+        homePage.logOut();
+    }
 
     public HomePage openHomePage() {
 

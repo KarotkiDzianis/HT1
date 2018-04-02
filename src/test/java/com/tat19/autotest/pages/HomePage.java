@@ -14,6 +14,8 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[2]/div[2]/div[1]/div/div/a")
     private WebElement linkEnableAutoRefresh;
 
+    @FindBy(xpath = "//a[@href=\"/logout\"]")
+    private WebElement logOut;
 
     private WebDriver driver;
 
@@ -37,5 +39,9 @@ public class HomePage extends AbstractPage {
         return linkEnableAutoRefresh.getText();
     }
 
+    public void logOut() {
+
+        logOut.click();
+    }
 
 }

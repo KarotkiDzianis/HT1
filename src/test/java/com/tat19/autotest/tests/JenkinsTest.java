@@ -20,15 +20,20 @@ public class JenkinsTest {
     private final String userPass = "root";
 
 
-    @BeforeMethod(description = "Init browser")
+    @BeforeClass(description = "Init browser")
     public void setUp() throws Exception {
         steps = new Steps();
         steps.initBrowser();
+
+    }
+
+    @BeforeMethod(description = "LogInJenkins")
+    public void logIn() throws Exception {
         steps.loginJenkins(userName, userPass);
     }
 
 
-    @Test(description = "test 1")
+    @Test(description = "HT1 test 1")
     public void testLinkManageJenkins111() throws Exception {
         ManageJenkinsPage manageJenkinsPage = steps.openManageJenkinsPage();
         String str = manageJenkinsPage.getTextLinkManageUsers();
@@ -38,7 +43,7 @@ public class JenkinsTest {
 
     }
 
-    @Test(description = "test 2")
+    @Test(description = "HT1 test 2")
     public void testLinkManageUsers() throws Exception {
         ManageUsersPage manageUsersPage = steps.openManageUsersPage();
         String str = manageUsersPage.getTextLinkCreateUser();
@@ -46,7 +51,7 @@ public class JenkinsTest {
 
     }
 
-    @Test(description = "test 3")
+    @Test(description = "HT1 test 3")
     public void testFieldsInCreateUserForm() {
         CreateUsersPage createUsersPage = steps.openCreateUsersPage();
         Assert.assertTrue(createUsersPage.getUserNameText().isEmpty(), "'Username' field is not empty");
@@ -58,7 +63,7 @@ public class JenkinsTest {
     }
 
 
-    @Test(description = "test 4")
+    @Test(description = "HT1 test 4")
     public void testAddSomeuser() {
         CreateUsersPage createUsersPage = steps.openCreateUsersPage();
         createUsersPage.setUserName(testUser.getName());
@@ -71,14 +76,14 @@ public class JenkinsTest {
 
     }
 
-    @Test(description = "test 5")
+    @Test(description = "HT1 test 5", dependsOnMethods = "testAddSomeuser")
     public void testWarningTextDuringDeleteSomeuser() {
         DeletePage deletePage = steps.openDeletePage();
         Assert.assertTrue(deletePage.getWarningText().contains("Are you sure about deleting the user from Jenkins?"));
 
     }
 
-    @Test(description = "test 6", expectedExceptions = NoSuchElementException.class)
+    @Test(description = "HT1 test 6", dependsOnMethods = "testWarningTextDuringDeleteSomeuser", expectedExceptions = NoSuchElementException.class)
     public void testAfterPushDeleteSomeuser() {
         DeletePage deletePage = steps.openDeletePage();
         deletePage.ClickButtonYes();
@@ -88,7 +93,7 @@ public class JenkinsTest {
 
     }
 
-    @Test(description = "test 7", expectedExceptions = NoSuchElementException.class)
+    @Test(description = "HT1 test 7", expectedExceptions = NoSuchElementException.class)
     public void testLinkAdminDelete() {
         ManageUsersPage manageUsersPage = steps.openManageUsersPage();
         Assert.assertEquals(manageUsersPage.getNameAdmin(), "admin");
@@ -97,7 +102,7 @@ public class JenkinsTest {
     }
 
 
-    @Test(description = "test LinkEnableAutoRefresh")
+    @Test(description = "HT1 test LinkEnableAutoRefresh")
     public void testLinkEnableAutoRefresh() {
         HomePage homePage = steps.openHomePage();
         String str = homePage.getTextLinkEnableAutoRefresh();
@@ -109,7 +114,7 @@ public class JenkinsTest {
     }
 
 
-    @Test(description = "test EmptyUser")
+    @Test(description = "HT1 test EmptyUser")
     public void testEmptyUser() {
         CreateUsersPage createUsersPage = steps.openCreateUsersPage();
         createUsersPage.setUserName(emptyNameUser.getName());
@@ -122,7 +127,13 @@ public class JenkinsTest {
     }
 
 
-    @AfterMethod(description = "Stop Browser")
+    @AfterMethod(description = "logOutJenkins")
+    public void logOut() throws Exception {
+        steps.logOut();
+    }
+
+
+    @AfterClass(description = "Stop Browser")
     public void stopBrowser() throws Exception {
         steps.closeDriver();
     }
