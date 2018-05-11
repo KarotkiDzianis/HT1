@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a630a8e9-6ae9-442a-acca-952568b5fdca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" afterPath="$PROJECT_DIR$/ReadMe.txt" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tat19/autotest/tests/JenkinsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tat19/autotest/tests/JenkinsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,9 +29,11 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tat19/autotest/tests/JenkinsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="130" column="27" lean-forward="false" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
+              <caret line="130" column="59" lean-forward="false" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5360#5361#0" expanded="true" />
+                <element signature="e#5426#5427#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="140" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -301,7 +301,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="20" width="1400" height="970" extended-state="1" />
+    <frame x="140" y="20" width="1400" height="970" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -351,9 +351,11 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tat19/autotest/tests/JenkinsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="130" column="27" lean-forward="false" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
+          <caret line="130" column="59" lean-forward="false" selection-start-line="130" selection-start-column="59" selection-end-line="130" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5360#5361#0" expanded="true" />
+            <element signature="e#5426#5427#0" expanded="true" />
           </folding>
         </state>
       </provider>
