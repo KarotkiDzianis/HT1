@@ -1,1 +1,1 @@
-Do not open me!!!
+Hello, world!

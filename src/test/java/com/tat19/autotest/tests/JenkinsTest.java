@@ -126,6 +126,12 @@ public class JenkinsTest {
         Assert.assertEquals(createUsersPage.getErrorTextInCreateNewUser(), "\"\" is prohibited as a username for security reasons.");
     }
 
+    @Test(description = "New Test")
+    public void test(){
+ // Here can be your method
+    }
+
+
 
     @AfterMethod(description = "logOutJenkins")
     public void logOut() throws Exception {
