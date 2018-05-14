@@ -1,0 +1,120 @@
+[33mcommit ab06d7caf17a5c7b11561d8915cbd434f1585af2[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 11:33:35 2018 +0300
+
+    second mess in develop
+
+[33mcommit 61abe0dc793358809565ea117b3c0d0d0d244541[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 11:32:31 2018 +0300
+
+    new mes in develop
+
+[33mcommit ec901d7e7ea30619b0e3e3910d55e6f217bca767[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 11:25:53 2018 +0300
+
+    changes in develop
+
+[33mcommit 549e59572d06798d1781508b95cd3d720a300209[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 11:25:09 2018 +0300
+
+    changes in 1.txt
+
+[33mcommit 850adf4d35f414c6f23bf26119671d94571ce220[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 10:55:30 2018 +0300
+
+    commit 2
+
+[33mcommit 0c31d4310552abf7701e1aa8c1e0b28b36b649ed[m
+Merge: 9c7ba87 a2299df
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 10:54:09 2018 +0300
+
+    new commmit in develop
+
+[33mcommit 9c7ba877587ad585ef7e0512e93a537ec10f1aa0[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 10:50:39 2018 +0300
+
+    delete 2 files
+
+[33mcommit 5be43a65a395c737530cb5abe941f9d0aa87519b[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 10:19:11 2018 +0300
+
+    added 2 files
+
+[33mcommit 77b5c13fdbc6604d4b6bfb202104855075a50a36[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 10:22:07 2018 +0300
+
+    new commit to master branch
+
+[33mcommit a2299dfc4853a9dfb6df1c080faaa8a75c58cde1[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 10:19:11 2018 +0300
+
+    added 2 files
+
+[33mcommit f89eb846adb54d1366ad8dc058bc326aa185aa7a[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Mon May 14 09:00:38 2018 +0300
+
+    new commit
+
+[33mcommit d5d7b54437750f91466d8bb9313ee1c60ece79f4[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Fri May 11 17:04:20 2018 +0300
+
+    Add body in method 'New test'
+
+[33mcommit 3ea54fbdcf41a9a450dc67da300de320a6df2b21[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Fri May 11 16:58:26 2018 +0300
+
+    first commit on develop branch
+
+[33mcommit 80b917104a6a3a622671fecd5f8c83c8bed109de[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Fri May 11 16:48:57 2018 +0300
+
+    third commit
+
+[33mcommit f4e2b786366dd68465f77ad3bc691ef20d4d510b[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Fri May 11 16:42:03 2018 +0300
+
+    Add new test in JenkinsTest.java
+
+[33mcommit 9999adec9cd65b20684f5841ca5dba7d218e6f15[m
+Author: Dzianis Karotki <Dzianis_Karotki@epam.com>
+Date:   Fri May 11 16:14:26 2018 +0300
+
+    add file ReadMe.txt
+
+[33mcommit 0f7b8b9cfcc485085de9d6a49eb923f04b5ae0ee[m
+Author: KarotkiDzianis <karotki.dzianis@gmail.com>
+Date:   Mon Apr 2 22:41:45 2018 +0300
+
+    Add logOut()
+
+[33mcommit 206a7bb75250d18c78bf4611e7a706f04f8230ef[m
+Author: KarotkiDzianis <karotki.dzianis@gmail.com>
+Date:   Sat Mar 31 10:48:12 2018 +0300
+
+    Third commit
+
+[33mcommit 1b5706888e05d8f95462108481ec4b00dc21bb28[m
+Author: KarotkiDzianis <karotki.dzianis@gmail.com>
+Date:   Sat Mar 31 10:36:42 2018 +0300
+
+    Second commit
+
+[33mcommit 748793bee36630a16638571c0d2ae5f3ff878042[m
+Author: KarotkiDzianis <karotki.dzianis@gmail.com>
+Date:   Wed Mar 28 19:40:10 2018 +0300
+
+    First commit
