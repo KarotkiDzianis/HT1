@@ -128,7 +128,7 @@ public class JenkinsTest {
 
     @Test(description = "New Test")
     public void test(){
-        System.out.println("Hello from 'develop' branch") ;
+ // Here can be your method
     }
 
 
